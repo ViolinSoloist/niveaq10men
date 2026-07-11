@@ -17,16 +17,49 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Transição suave para mudança de fonte */
+/* --- ESTILOS DO CARROSSEL (BOLINHAS) --- */
+
+/* elipse escura de fundo => cresce quando o mouse passa por cima. */
+.indicator-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    padding: 8px 12px;
+    display: inline-flex;
+    gap: 8px;
+    transition: transform 0.3s ease, padding 0.3s ease;
+    cursor: pointer;
+}
+
+.indicator-wrapper:hover {
+    transform: scale(1.4); 
+    padding: 10px 16px;
+}
+
+/* Bolinha padrão */
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border: none;
+}
+
+/* Bolinha ativa (simbolizando a foto sendo mostrada) */
+.carousel-dot.active {
+    width: 24px; /* Estica a bolinha atual */
+    background-color: #FFC72C; /* Amarelo da Nivea Q10 */
+}
+
+/* mudança de fonte global
 html {
     transition: font-size 0.3s ease;
 }
 
-/* 
- * CLASSES PARA O MODO ALTO CONTRASTE 
- * Quando a classe .alto-contraste for adicionada ao body pelo JS,
- * estas regras irão sobrescrever as cores padrão.
- */
+
+/* --- CLASSES PARA O MODO ALTO CONTRASTE --- */
 body.alto-contraste {
     background-color: #000000 !important;
     color: #FFFFFF !important;
@@ -41,7 +74,7 @@ body.alto-contraste .card-produto {
 }
 
 body.alto-contraste .title-color {
-    color: #FFFF00 !important; /* Amarelo puro para legibilidade máxima */
+    color: #FFFF00 !important;
 }
 
 body.alto-contraste .desc-color {
