@@ -73,17 +73,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const htmlElement = document.documentElement;
     const btnAumentar = document.getElementById('btn-aumentar');
     const btnDiminuir = document.getElementById('btn-diminuir');
-    let fontSize = 16; 
+    
+    let fontSize = 14; htmlElement.style.fontSize = fontSize + 'px';
     
     btnAumentar.addEventListener('click', () => {
-        if (fontSize < 24) {
+        if (fontSize < 22) {
             fontSize += 2;
             htmlElement.style.fontSize = fontSize + 'px';
         }
     });
 
     btnDiminuir.addEventListener('click', () => {
-        if (fontSize > 12) {
+        if (fontSize > 10) {
             fontSize -= 2;
             htmlElement.style.fontSize = fontSize + 'px';
         }
