@@ -1,0 +1,64 @@
+/* Logo customizada NIVEA */
+.logo-nivea {
+    width: 80px;
+    height: 80px;
+    background-color: #002E7A;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Transição suave para mudança de fonte */
+html {
+    transition: font-size 0.3s ease;
+}
+
+/* 
+ * CLASSES PARA O MODO ALTO CONTRASTE 
+ * Quando a classe .alto-contraste for adicionada ao body pelo JS,
+ * estas regras irão sobrescrever as cores padrão.
+ */
+body.alto-contraste {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+body.alto-contraste .secao-clara, 
+body.alto-contraste .secao-cinza,
+body.alto-contraste .card-passo,
+body.alto-contraste .card-produto {
+    background-color: #121212 !important;
+    border-color: #FFFF00 !important;
+}
+
+body.alto-contraste .title-color {
+    color: #FFFF00 !important; /* Amarelo puro para legibilidade máxima */
+}
+
+body.alto-contraste .desc-color {
+    color: #FFFFFF !important;
+}
+
+body.alto-contraste header {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #FFFF00;
+}
+
+body.alto-contraste .logo-nivea {
+    background-color: #000;
+    border-color: #FFFF00;
+    color: #FFFF00;
+}
+
+body.alto-contraste .border-img {
+    border: 2px solid #FFFF00 !important;
+}

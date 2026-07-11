@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIVEA MEN Q10 - O próximo nível da sua rotina</title>
+    
+    <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -24,34 +25,21 @@
             }
         }
     </script>
-    <style>
-        .logo-nivea {
-            width: 80px;
-            height: 80px;
-            background-color: #002E7A;
-            border: 3px solid white;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 1.1;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-    </style>
+    
+    <!-- FontAwesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Seu CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased transition-colors duration-300">
 
     <!-- ACESSIBILIDADE E HEADER -->
-    <div class="bg-gray-200 text-gray-700 py-2 px-6 flex justify-end items-center gap-4 text-sm font-semibold border-b border-gray-300">
+    <div id="barra-acessibilidade" class="bg-gray-200 text-gray-700 py-2 px-6 flex justify-end items-center gap-4 text-sm font-semibold border-b border-gray-300">
         <span>Acessibilidade:</span>
-        <button class="hover:text-niveaBlue px-2 py-1 bg-white rounded shadow-sm">A-</button>
-        <button class="hover:text-niveaBlue px-2 py-1 bg-white rounded shadow-sm text-lg">A+</button>
-        <button class="hover:text-niveaBlue px-3 py-1 bg-gray-800 text-white rounded shadow-sm flex items-center gap-2">
+        <button id="btn-diminuir" class="hover:text-niveaBlue px-2 py-1 bg-white rounded shadow-sm">A-</button>
+        <button id="btn-aumentar" class="hover:text-niveaBlue px-2 py-1 bg-white rounded shadow-sm text-lg">A+</button>
+        <button id="btn-contraste" class="hover:text-niveaBlue px-3 py-1 bg-gray-800 text-white rounded shadow-sm flex items-center gap-2">
             <i class="fas fa-adjust"></i> Alto contraste
         </button>
     </div>
@@ -65,7 +53,6 @@
             <nav class="hidden md:flex gap-8 font-bold text-lg">
                 <a href="#promocao" class="hover:text-q10Yellow transition">A Promoção</a>
                 <a href="#produtos" class="hover:text-q10Yellow transition">Linha Q10</a>
-                <a href="#teste" class="hover:text-q10Yellow transition">Teste de Rotina</a>
                 <a href="#onde-encontrar" class="hover:text-q10Yellow transition">Onde Encontrar</a>
             </nav>
             <a href="#promocao" class="bg-q10Yellow text-niveaBlue px-6 py-3 rounded-full font-bold text-lg hover:bg-q10Hover transition shadow-lg">
@@ -90,79 +77,71 @@
                     <a href="#promocao" class="bg-q10Yellow text-niveaBlue text-center px-8 py-4 rounded-full font-bold text-xl hover:bg-q10Hover transition shadow-lg">
                         Ver como participar
                     </a>
-                    <a href="#teste" class="bg-transparent border-2 border-white text-white text-center px-8 py-4 rounded-full font-bold text-xl hover:bg-white hover:text-niveaBlue transition shadow-lg">
-                        Descobrir meu cuidado
-                    </a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <!-- A imagem do homem no espelho que você conseguiu entra aqui. Mude 'key-visual.jpg' para o nome correto -->
-                <img src="src/homem_maduro_propaganda.jpg" alt="Homem maduro no espelho utilizando NIVEA MEN Q10" class="w-full max-w-lg rounded-2xl shadow-2xl border-4 border-white border-opacity-20 object-cover">
+                <img src="src/key-visual.jpg" alt="Homem maduro no espelho utilizando NIVEA MEN Q10" class="w-full max-w-lg rounded-2xl shadow-2xl border-4 border-white border-opacity-20 object-cover">
             </div>
         </div>
     </section>
 
-    <!-- BANNER PROMOCIONAL (IMAGEM DOIS PRODUTOS) -->
-    <section class="bg-gray-900 py-12 px-6">
+    <!-- BANNER PROMOCIONAL -->
+    <section class="bg-gray-900 py-12 px-6 banner-bg">
         <div class="max-w-6xl mx-auto">
             <img src="src/doisProdutos.jpg" alt="NIVEA MEN Q10: O próximo nível da sua rotina" class="w-full h-auto rounded-3xl shadow-2xl object-cover border border-gray-700">
         </div>
     </section>
 
     <!-- COMO PARTICIPAR E BRINDES -->
-    <section id="promocao" class="py-20 px-6 bg-white">
+    <section id="promocao" class="py-20 px-6 bg-white secao-clara">
         <div class="max-w-6xl mx-auto">
             <div class="flex items-center gap-4 mb-12 border-b-2 border-gray-100 pb-4">
-                <h2 class="text-4xl font-bold text-niveaBlue">Como Participar & Brindes</h2>
-                <button class="bg-gray-100 text-niveaBlue px-4 py-2 rounded-full font-bold hover:bg-gray-200 flex items-center gap-2">
+                <h2 class="text-4xl font-bold text-niveaBlue title-color">Como Participar & Brindes</h2>
+                <button id="btn-ouvir" class="bg-gray-100 text-niveaBlue px-4 py-2 rounded-full font-bold hover:bg-gray-200 flex items-center gap-2">
                     <i class="fas fa-volume-up"></i> Ouvir esta seção
                 </button>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Regras -->
                 <div class="grid grid-cols-1 gap-8">
-                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 shadow-sm relative pt-12 border-l-4 border-l-q10Yellow">
+                    <div class="card-passo bg-gray-50 rounded-2xl p-8 border border-gray-200 shadow-sm relative pt-12">
                         <div class="absolute -top-6 left-8 bg-niveaBlue text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-white">1</div>
-                        <h3 class="text-2xl font-bold mb-2 text-niveaBlue">Compre e leve um Q10 MEN</h3>
-                        <p class="text-lg text-gray-600">Compre qualquer produto NIVEA tradicional junto com um item da nova linha NIVEA MEN Q10.</p>
+                        <h3 class="text-2xl font-bold mb-2 text-niveaBlue title-color">Compre e leve um Q10 MEN</h3>
+                        <p class="text-lg text-gray-600 desc-color">Compre qualquer produto NIVEA tradicional junto com um item da nova linha NIVEA MEN Q10.</p>
                     </div>
-                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 shadow-sm relative pt-12 border-l-4 border-l-q10Yellow">
+                    <div class="card-passo bg-gray-50 rounded-2xl p-8 border border-gray-200 shadow-sm relative pt-12 border-l-4 border-l-q10Yellow">
                         <div class="absolute -top-6 left-8 bg-niveaBlue text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-white">2</div>
-                        <h3 class="text-2xl font-bold mb-2 text-niveaBlue">Ganhe a miniatura na hora</h3>
-                        <p class="text-lg text-gray-600">Receba no ato da compra uma miniatura do Hidratante Q10 MEN (30ml) para testar ou levar em viagens.</p>
+                        <h3 class="text-2xl font-bold mb-2 text-niveaBlue title-color">Ganhe a miniatura na hora</h3>
+                        <p class="text-lg text-gray-600 desc-color">Receba no ato da compra uma miniatura do Hidratante Q10 MEN (30ml) para testar ou levar em viagens.</p>
                     </div>
-                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 shadow-sm relative pt-12 border-l-4 border-l-q10Yellow">
+                    <div class="card-passo bg-gray-50 rounded-2xl p-8 border border-gray-200 shadow-sm relative pt-12 border-l-4 border-l-q10Yellow">
                         <div class="absolute -top-6 left-8 bg-niveaBlue text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-white">3</div>
-                        <h3 class="text-2xl font-bold mb-2 text-niveaBlue">Leve o espelho de brinde</h3>
-                        <p class="text-lg text-gray-600">Ganhe também um espelho de barbear especial com aumento e iluminação LED acoplada.</p>
+                        <h3 class="text-2xl font-bold mb-2 text-niveaBlue title-color">Leve o espelho de brinde</h3>
+                        <p class="text-lg text-gray-600 desc-color">Ganhe também um espelho de barbear especial com aumento e iluminação LED acoplada.</p>
                     </div>
                 </div>
                 
-                <!-- Imagem dos Brindes -->
                 <div class="flex justify-center h-full">
-                    <img src="src/hidratantecircular.jpg" alt="Brindes: Miniatura Hidratante 3 em 1 e Espelho LED de barbear" class="w-full h-full object-cover rounded-3xl shadow-xl border border-gray-200">
+                    <img src="src/hidratantecircular.jpg" alt="Brindes: Miniatura Hidratante 3 em 1 e Espelho LED" class="w-full h-full object-cover rounded-3xl shadow-xl border border-gray-200 border-img">
                 </div>
             </div>
-            <p class="mt-8 text-gray-500 italic text-lg text-center">Promoção válida por 30 dias (quinta a domingo) na região metropolitana de São Paulo. Consulte as lojas participantes.</p>
         </div>
     </section>
 
     <!-- PRODUTOS -->
-    <section id="produtos" class="py-20 px-6 bg-gray-100">
+    <section id="produtos" class="py-20 px-6 bg-gray-100 secao-cinza">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-niveaBlue mb-12 text-center">A Linha Q10 MEN: Feita para a pele madura</h2>
+            <h2 class="text-4xl font-bold text-niveaBlue title-color mb-12 text-center">A Linha Q10 MEN: Feita para a pele madura</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Produto Principal -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200 flex flex-col">
+                <div class="card-produto bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200 flex flex-col">
                     <div class="h-80 bg-gray-300 w-full overflow-hidden">
                         <img src="src/hidratante3em1.jpg" alt="NIVEA MEN Q10 Hidratante 3 em 1" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex-grow">
-                        <h3 class="text-3xl font-bold text-niveaBlue mb-2">Hidratante 3 em 1 <span class="text-q10Yellow">Q10</span></h3>
+                        <h3 class="text-3xl font-bold text-niveaBlue title-color mb-2">Hidratante 3 em 1 <span class="text-q10Yellow">Q10</span></h3>
                         <p class="text-lg font-bold text-gray-500 mb-6">150 ml</p>
-                        <ul class="space-y-3 text-xl text-gray-700">
+                        <ul class="space-y-3 text-xl text-gray-700 desc-color">
                             <li class="flex items-start gap-3"><i class="fas fa-check text-niveaBlue mt-1"></i> Para rosto, corpo e mãos</li>
                             <li class="flex items-start gap-3"><i class="fas fa-check text-niveaBlue mt-1"></i> Fórmula prática para uso diário</li>
                             <li class="flex items-start gap-3"><i class="fas fa-check text-niveaBlue mt-1"></i> Ideal para uma rotina simples e funcional sem múltiplos passos</li>
@@ -170,15 +149,14 @@
                     </div>
                 </div>
 
-                <!-- Produto Complementar -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200 flex flex-col">
+                <div class="card-produto bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-200 flex flex-col">
                     <div class="h-80 bg-gray-300 w-full overflow-hidden">
-                        <img src="src/balsamo.jpg" alt="NIVEA MEN Q10 Bálsamo Pós-Barba Antissinais" class="w-full h-full object-cover">
+                        <img src="src/balsamo.jpg" alt="Bálsamo Pós-Barba Antissinais" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex-grow">
-                        <h3 class="text-3xl font-bold text-niveaBlue mb-2">Bálsamo Pós-Barba Antissinais <span class="text-q10Yellow">Q10</span></h3>
+                        <h3 class="text-3xl font-bold text-niveaBlue title-color mb-2">Bálsamo Pós-Barba Antissinais <span class="text-q10Yellow">Q10</span></h3>
                         <p class="text-lg font-bold text-gray-500 mb-6">100 ml</p>
-                        <ul class="space-y-3 text-xl text-gray-700">
+                        <ul class="space-y-3 text-xl text-gray-700 desc-color">
                             <li class="flex items-start gap-3"><i class="fas fa-check text-niveaBlue mt-1"></i> Ajuda a acalmar a pele após o barbear</li>
                             <li class="flex items-start gap-3"><i class="fas fa-check text-niveaBlue mt-1"></i> Reduz sensação de irritação</li>
                             <li class="flex items-start gap-3"><i class="fas fa-check text-niveaBlue mt-1"></i> Indicado para o cuidado diário da pele madura</li>
@@ -189,45 +167,7 @@
         </div>
     </section>
 
-    <!-- ASSISTENTE WHATSAPP / INTEGRAÇÃO -->
-    <section class="py-20 px-6 bg-niveaBlue text-white">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 bg-white bg-opacity-10 p-12 rounded-3xl border border-white border-opacity-20">
-            <div class="md:w-2/3">
-                <h2 class="text-4xl font-bold mb-6 flex items-center gap-4">
-                    <i class="fab fa-whatsapp text-green-400 text-5xl"></i> Continue sua rotina
-                </h2>
-                <p class="text-2xl mb-6 font-light">
-                    Receba dicas simples de cuidado com a pele, orientações de uso dos produtos Q10 MEN e envie o seu cupom fiscal diretamente pelo WhatsApp.
-                </p>
-                <ul class="space-y-4 text-xl mb-8">
-                    <li class="flex items-center gap-3"><i class="fas fa-microphone text-q10Yellow"></i> Atendimento prático por texto ou áudio</li>
-                    <li class="flex items-center gap-3"><i class="fas fa-receipt text-q10Yellow"></i> Envie a foto da sua nota fiscal e resgate seu brinde</li>
-                </ul>
-                <button class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-xl hover:bg-green-600 transition shadow-lg flex items-center gap-3 w-full md:w-auto justify-center">
-                    Falar com a NIVEA no WhatsApp
-                </button>
-            </div>
-            <div class="md:w-1/3 flex justify-center">
-                <i class="fas fa-mobile-alt text-9xl text-white opacity-50"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-gray-400 py-12 px-6 text-center">
-        <div class="max-w-6xl mx-auto flex flex-col items-center">
-            <div class="logo-nivea mb-6 opacity-50">
-                <span>NIVEA</span>
-                <span>MEN</span>
-            </div>
-            <p class="mb-4">Anúncio publicitário da NIVEA (Beiersdorf S.A.), sujeito às diretrizes do Código Brasileiro de Autorregulamentação Publicitária (CONAR).</p>
-            <div class="flex gap-6 mb-8 underline">
-                <a href="#" class="hover:text-white">Ver regulamento completo</a>
-                <a href="#" class="hover:text-white">Política de privacidade</a>
-            </div>
-            <p class="text-sm">© 2026 NIVEA. Protótipo acadêmico - conteúdo ilustrativo.</p>
-        </div>
-    </footer>
-
+    <!-- Seu script externo -->
+    <script src="script.js"></script>
 </body>
 </html>
