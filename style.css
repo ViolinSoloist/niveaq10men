@@ -53,7 +53,7 @@
     background-color: #FFC72C; /* Amarelo da Nivea Q10 */
 }
 
-/* mudança de fonte global
+/* mudança de fonte global */
 html {
     transition: font-size 0.3s ease;
 }
