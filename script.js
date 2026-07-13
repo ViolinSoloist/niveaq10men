@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnAumentar = document.getElementById('btn-aumentar');
     const btnDiminuir = document.getElementById('btn-diminuir');
     
-    let fontSize = 14; htmlElement.style.fontSize = fontSize + 'px';
+    let fontSize = 12; htmlElement.style.fontSize = fontSize + 'px';
     
     btnAumentar.addEventListener('click', () => {
         if (fontSize < 22) {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     btnDiminuir.addEventListener('click', () => {
-        if (fontSize > 10) {
+        if (fontSize > 8) {
             fontSize -= 2;
             htmlElement.style.fontSize = fontSize + 'px';
         }
