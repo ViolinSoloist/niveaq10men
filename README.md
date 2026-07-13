@@ -1,6 +1,6 @@
-<div style="text-align: center; display: flex; flex-direction:column; justify-content: space-around; height: 934px; margin: 0">
-    <img style="max-width: 100px; align-self: center; margin: 0" src="src\USP.jpg" alt="USP - Logotipo">
-    <p id="instituto">
+<div align="center">
+    <img width="100" src="src\USP.jpg" alt="USP - Logotipo">
+    <p style="margin: 67px">
         Universidade de São Paulo<br>
         Escola de Comunicações e Artes<br> 
         Departamento de Relações Públicas, Propaganda e Turismo
@@ -13,7 +13,7 @@
         Sophia Rodrigues de Lana<br>
         Victoria Ábia dos Santos Lourinho
     </p>
-    <p><b>Análise de marca no ponto de venda:</b> NIVEA</p>
+    <p style="margin: 67px"><b>Análise de marca no ponto de venda:</b> NIVEA</p>
     <footer style="margin-top: 250px">
         <p>São Paulo <br> 2026
         </p> 
