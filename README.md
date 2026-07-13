@@ -23,7 +23,7 @@
         </p> 
     </footer>
 </div>
-
+<br><br><br><br><br><br><br><br>
 > **Atenção:** Este é um protótipo acadêmico em formato de site, criado para simular uma campanha da Nivea direcionada ao público-alvo masculino e sênior[cite: 8]. Possui objetivo estritamente acadêmico[cite: 8]. Trata-se de um site comercial fictício e navegável, não tendo sido feito nem patrocinado pela NIVEA[cite: 8].
 
 # **CAMPANHA PROMOCIONAL**
