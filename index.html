@@ -236,63 +236,14 @@
                 
                 <!-- Barra de Busca -->
                 <div class="flex flex-col md:flex-row gap-4 mb-10">
-                    <!-- Classe !text-black adicionada para garantir que o texto digitado seja visível sempre -->
-                    <input type="text" placeholder="Digite seu bairro ou CEP" class="flex-grow border border-gray-300 rounded-xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-niveaBlue !text-black placeholder-gray-400">
-                    <button class="bg-niveaBlue text-white font-bold text-lg px-10 py-4 rounded-xl hover:bg-niveaLight transition shadow-md">
+                    <input id="input-cep" type="text" placeholder="Digite apenas o CEP (ex: 01310100)" maxlength="9" class="flex-grow border border-gray-300 rounded-xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-niveaBlue !text-black placeholder-gray-400">
+                    
+                    <button id="btn-buscar-cep" class="bg-niveaBlue text-white font-bold text-lg px-10 py-4 rounded-xl hover:bg-niveaLight transition shadow-md">
                         Buscar
                     </button>
                 </div>
 
-                <!-- Lista de Lojas -->
-                <div class="space-y-4">
-                    <!-- Loja 1 -->
-                    <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:shadow-md transition card-produto">
-                        <div>
-                            <h4 class="font-bold text-xl text-niveaBlue title-color">Drogaria São Paulo — Pinheiros</h4>
-                            <p class="text-gray-500 desc-color mt-1">Rua dos Pinheiros, 620</p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0 border-t md:border-t-0 border-gray-100 pt-3 md:pt-0 w-full md:w-auto">
-                            <p class="font-bold text-niveaBlue title-color text-lg">1,2 km</p>
-                            <a href="#" class="text-niveaLight font-bold underline text-sm hover:text-niveaBlue">Ver no mapa</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Loja 2 -->
-                    <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:shadow-md transition card-produto">
-                        <div>
-                            <h4 class="font-bold text-xl text-niveaBlue title-color">Farmácia NIVEA Parceira — Moema</h4>
-                            <p class="text-gray-500 desc-color mt-1">Av. Ibirapuera, 2100</p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0 border-t md:border-t-0 border-gray-100 pt-3 md:pt-0 w-full md:w-auto">
-                            <p class="font-bold text-niveaBlue title-color text-lg">2,8 km</p>
-                            <a href="#" class="text-niveaLight font-bold underline text-sm hover:text-niveaBlue">Ver no mapa</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Loja 3 -->
-                    <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:shadow-md transition card-produto">
-                        <div>
-                            <h4 class="font-bold text-xl text-niveaBlue title-color">Drogaria São Paulo — Tatuapé</h4>
-                            <p class="text-gray-500 desc-color mt-1">Rua Tuiuti, 450</p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0 border-t md:border-t-0 border-gray-100 pt-3 md:pt-0 w-full md:w-auto">
-                            <p class="font-bold text-niveaBlue title-color text-lg">3,5 km</p>
-                            <a href="#" class="text-niveaLight font-bold underline text-sm hover:text-niveaBlue">Ver no mapa</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Loja 4 -->
-                    <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:shadow-md transition card-produto">
-                        <div>
-                            <h4 class="font-bold text-xl text-niveaBlue title-color">Farmácia Popular — Santo Amaro</h4>
-                            <p class="text-gray-500 desc-color mt-1">Av. Santo Amaro, 1780</p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0 border-t md:border-t-0 border-gray-100 pt-3 md:pt-0 w-full md:w-auto">
-                            <p class="font-bold text-niveaBlue title-color text-lg">4,1 km</p>
-                            <a href="#" class="text-niveaLight font-bold underline text-sm hover:text-niveaBlue">Ver no mapa</a>
-                        </div>
-                    </div>
-                </div>
+                <div id="lista-lojas" class="space-y-4">
 
                 <p class="text-gray-500 desc-color text-sm mt-6 text-center md:text-left">Mostrando lojas participantes próximas. Resultados ilustrativos para este protótipo.</p>
             </div>
