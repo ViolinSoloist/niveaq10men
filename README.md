@@ -1,10 +1,12 @@
 <div align="center">
     <img width="100" src="src\USP.jpg" alt="USP - Logotipo">
-    <p style="margin: 67px">
+    <br><br><br>
+    <p>
         Universidade de São Paulo<br>
         Escola de Comunicações e Artes<br> 
         Departamento de Relações Públicas, Propaganda e Turismo
     </p>
+    <br><br>
     <p id="authors">
         Giovana Mariani Paganotti<br>  
         Julia Miranda de Almeida<br>
@@ -13,8 +15,10 @@
         Sophia Rodrigues de Lana<br>
         Victoria Ábia dos Santos Lourinho
     </p>
-    <p style="margin: 67px"><b>Análise de marca no ponto de venda:</b> NIVEA</p>
-    <footer style="margin-top: 250px">
+    <br><br>
+    <p><b>Análise de marca no ponto de venda:</b> NIVEA</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
         <p>São Paulo <br> 2026
         </p> 
     </footer>
