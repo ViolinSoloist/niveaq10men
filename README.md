@@ -1,15 +1,4 @@
-<style>
-    #capa {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 934px;
-        margin: 0
-    }
-</style>
-
-<section id="capa">
+<div style="text-align: center; display: flex; flex-direction:column; justify-content: space-around; height: 934px; margin: 0">
     <img style="max-width: 100px; align-self: center; margin: 0" src="src\USP.jpg" alt="USP - Logotipo">
     <p id="instituto">
         Universidade de São Paulo<br>
@@ -29,7 +18,7 @@
         <p>São Paulo <br> 2026
         </p> 
     </footer>
-</section>
+</div>
 
 > **Atenção:** Este é um protótipo acadêmico em formato de site, criado para simular uma campanha da Nivea direcionada ao público-alvo masculino e sênior[cite: 8]. Possui objetivo estritamente acadêmico[cite: 8]. Trata-se de um site comercial fictício e navegável, não tendo sido feito nem patrocinado pela NIVEA[cite: 8].
 
@@ -104,39 +93,22 @@ A campanha posiciona as duas novas extensões de linha, o Creme Hidratante 3 em 
 Ademais, o tema conecta-se organicamente à mecânica comercial de bundle estruturada para a ação, o termo "Próximo Nível" atua como um convite duplo ao consumidor: o incentivo para experimentar uma nova categoria de cuidados específicos e, simultaneamente, o benefício de elevar a sua experiência de viagem e deslocamentos por meio do ganho imediato do kit de miniaturas exclusivas. Dessa forma, a comunicação amarra o benefício racional e imediato dos novos SKUs (como a eliminação do esbranquiçado da pele e a cicatrização sem a ardência do álcool) ao ganho promocional da portabilidade, gerando awareness e construindo um diálogo de respeito, utilidade e alta relevância com o shopper.
 
 # **Key visual da campanha / mockups**
-<style> 
-    .legenda {
-        margin: 7px;
-        font-size:13px;
-        margin-top: 24px;
-        margin-bottom: 10px;
-    }
-    .imagem {
-        max-width: 720px;
-        margin: auto;
-    }
-
-    #conjunto-fotos {
-        text-align: center;
-    }
-</style>
-
-<section id="conjunto-fotos">
-    <p class="legenda">Banner 1 para propaganda dos 2 novos produtos</p>
-    <img class="imagem" src="src\doisProdutos.jpg" alt="Banner 1 contendo os dois produtos da promoção">
-    <!---->
-    <p class="legenda">Banner 2 para propaganda do hidratante</p>
-    <img class="imagem" src="src\key-visual.png" alt="Banner 2: Homem maduro usando Hidratante 3 em 1">
-    <!---->
-    <p class="legenda">Fotografia profissional de produto do Bálsamo Pós-Barba NIVEA MEN Q10.</p>
-    <img class="imagem" src="src\balsamo.png" alt="Fotografia profissional de produto do Bálsamo Pós-Barba NIVEA MEN Q10">
-    <!---->
-    <p class="legenda">Fotografia profissional de produto de um hidratante NIVEA MEN Q10 3 em 1</p>
-    <img class="imagem" src="src\hidratante3em1.png" alt="Fotografia profissional de produto de um hidratante NIVEA MEN Q10 3 em 1">
-    <!---->
-    <p class="legenda">Fotografia do creme em miniatura do NIVEA MEN Q10 3 em 1, posicionada ao lado de um espelho de bolso masculino</p>
-    <img class="imagem" src="src\hidratantecircular.png" alt="Fotografia do creme em miniatura do NIVEA MEN Q10 3 em 1, posicionada ao lado de um espelho de bolso masculino">
-</section>
+<div align="center">
+    <p style="font-size: 13px"><em>Banner 1 para propaganda dos 2 novos produtos</em></p>
+    <img width="720" src="src/doisProdutos.jpg" alt="Banner 1 contendo os dois produtos da promoção">
+    <br><br>
+    <p style="font-size: 13px"><em>Banner 2 para propaganda do hidratante</em></p>
+    <img width="720" src="src/key-visual.png" alt="Banner 2: Homem maduro usando Hidratante 3 em 1">
+    <br><br>
+    <p style="font-size: 13px"><em>Fotografia profissional de produto do Bálsamo Pós-Barba NIVEA MEN Q10.</em></p>
+    <img width="720" src="src/balsamo.png" alt="Fotografia profissional de produto do Bálsamo Pós-Barba NIVEA MEN Q10">
+    <br><br>
+    <p style="font-size: 13px"><em>Fotografia profissional de produto de um hidratante NIVEA MEN Q10 3 em 1</em></p>
+    <img width="720" src="src/hidratante3em1.png" alt="Fotografia profissional de produto de um hidratante NIVEA MEN Q10 3 em 1">
+    <br><br>
+    <p style="font-size: 13px"><em>Fotografia do creme em miniatura do NIVEA MEN Q10 3 em 1, posicionada ao lado de um espelho de bolso masculino</em></p>
+    <img width="720" src="src/hidratantecircular.png" alt="Fotografia do creme em miniatura do NIVEA MEN Q10 3 em 1">
+</div>
 
 ## 
 ## **Estrutura do site da promoção** Landing page promocional responsiva e acessível
